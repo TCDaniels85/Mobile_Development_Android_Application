@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_background"
+    tools:context=".ControlsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/text_background"
+        android:orientation="vertical"
+        android:paddingHorizontal="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <TextView
+            android:id="@+id/controlTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/controlTxt1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/phone_lying_flat"
+                android:src="@drawable/phoneflat" />
+
+            <TextView
+                android:id="@+id/flatText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/flatText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/phone_tilted"
+                android:src="@drawable/phoneback" />
+
+            <TextView
+                android:id="@+id/bkText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bkText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/phone_tilted"
+                android:src="@drawable/phoneforward" />
+
+            <TextView
+                android:id="@+id/fwdText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fwdText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/phone_tilted"
+                android:src="@drawable/phoneleft" />
+
+            <TextView
+                android:id="@+id/lText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/phone_tilted"
+                android:src="@drawable/phoneright" />
+
+            <TextView
+                android:id="@+id/rText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rText"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/text_background"
+        android:contentDescription="@string/tardigrade_image"
+        android:src="@drawable/player"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_instructionFragment2"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_userScoreFragment"
+            app:destination="@id/userScoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoresFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.ScoresFragment"
+        android:label="fragment_scores"
+        tools:layout="@layout/fragment_scores" >
+        <action
+            android:id="@+id/action_scoresFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" >
+        <action
+            android:id="@+id/action_instructionFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_controlsFragment"
+            app:destination="@id/controlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userScoreFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.UserScoreFragment"
+        android:label="fragment_user_score"
+        tools:layout="@layout/fragment_user_score" >
+        <action
+            android:id="@+id/action_userScoreFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/controlsFragment"
+        android:name="com.cd.assignment_1_chrisdaniels.ControlsFragment"
+        android:label="fragment_controls"
+        tools:layout="@layout/fragment_controls" />
+</navigation>
